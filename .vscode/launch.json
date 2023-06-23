@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringtoolsApplication<springtools>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.github.charlesvhe.springtools.SpringtoolsApplication",
+            "projectName": "springtools",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
