@@ -43,11 +43,11 @@ public class ConfigItem implements Serializable {
 
     private java.math.BigDecimal decimal3;
 
-    private java.util.Date datetime1;
+    private java.util.Date timestamp1;
 
-    private java.util.Date datetime2;
+    private java.util.Date timestamp2;
 
-    private java.util.Date datetime3;
+    private java.util.Date timestamp3;
 
     private java.util.Date gmtCreate;
 
@@ -181,28 +181,28 @@ public class ConfigItem implements Serializable {
         this.decimal3 = decimal3;
     }
 
-    public java.util.Date getDatetime1() {
-        return datetime1;
+    public java.util.Date getTimestamp1() {
+        return timestamp1;
     }
 
-    public void setDatetime1(java.util.Date datetime1) {
-        this.datetime1 = datetime1;
+    public void setTimestamp1(java.util.Date timestamp1) {
+        this.timestamp1 = timestamp1;
     }
 
-    public java.util.Date getDatetime2() {
-        return datetime2;
+    public java.util.Date getTimestamp2() {
+        return timestamp2;
     }
 
-    public void setDatetime2(java.util.Date datetime2) {
-        this.datetime2 = datetime2;
+    public void setTimestamp2(java.util.Date timestamp2) {
+        this.timestamp2 = timestamp2;
     }
 
-    public java.util.Date getDatetime3() {
-        return datetime3;
+    public java.util.Date getTimestamp3() {
+        return timestamp3;
     }
 
-    public void setDatetime3(java.util.Date datetime3) {
-        this.datetime3 = datetime3;
+    public void setTimestamp3(java.util.Date timestamp3) {
+        this.timestamp3 = timestamp3;
     }
 
     public java.util.Date getGmtCreate() {

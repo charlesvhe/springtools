@@ -1,0 +1,5 @@
+###
+GET http://localhost:8080/test HTTP/1.1
+###
+GET http://localhost:8080/test?name=Charles HTTP/1.1
+
