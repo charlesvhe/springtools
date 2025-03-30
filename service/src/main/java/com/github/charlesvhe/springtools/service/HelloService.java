@@ -1,6 +1,6 @@
 package com.github.charlesvhe.springtools.service;
 
-import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -12,6 +12,7 @@ import org.springframework.web.client.HttpServerErrorException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.charlesvhe.springtools.entity.ConfigItem;
 import com.github.charlesvhe.springtools.repository.ConfigItemRepository;
+import com.github.charlesvhe.springtools.repository.ConfigMetaRepository;
 
 @RestController
 public class HelloService {
@@ -22,15 +23,18 @@ public class HelloService {
 	@Autowired
 	ConfigItemRepository configItemRepository;
 
+	@Autowired
+	ConfigMetaRepository configMetaRepository;
+
 	@GetMapping("/test")
-	public List<ConfigItem> hello(@RequestParam(required = false) String name) {
+	public ConfigItem hello(@RequestParam(required = false) String name) {
+		Optional<ConfigItem> item = configItemRepository.findById(1L);
+
 		System.out.println("hello world!");
 		if (name == null) {
 			throw new HttpServerErrorException(HttpStatus.BAD_REQUEST, "name is required");
 		}
-
-		List<ConfigItem> result = configItemRepository.findAll();
-
-		return result;
+		
+		return item.get();
 	}
 }
