@@ -3,3 +3,33 @@ GET http://localhost:8080/test HTTP/1.1
 ###
 GET http://localhost:8080/test?name=Charles HTTP/1.1
 
+###
+POST https://httpbin.org/post HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Charles",
+    "age": 30
+}
+
+
+
+# 高级用法 https://httpyac.github.io/guide/request.html
+# @host=https://httpbingo.org
+# ### 保存response到$global.author全局变量
+# GET /json HTTP/1.1
+
+# {{$global.author=response.parsedBody.slideshow.author;}}
+
+# ### 输入框提交变量
+# @name = {{$input input app? $value: Charles}}
+# POST /post HTTP/1.1
+# content-type: application/json
+
+# {
+#   "name": "{{name}}",
+#   "foo": "{{$global.author}}"
+# }
+
+
+
