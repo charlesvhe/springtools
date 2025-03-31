@@ -3,7 +3,7 @@
 ## 背景
 随着AI能力越来越强大，IDEA在AI编程领域毫无建树，AI编程工具公司不可能为每个IDE定制插件，同时插件能力有限无法完全控制IDE。越来越多的AI编程工具公司，使用VSCode定制AI IDE，作为Java开发有必要学习使用VSCode来进行开发，以便使用AI IDE提升开发效率，解放生产力。
 
-时下最火的Cursor、国内字节跳动的Trae均为基于VSCode的独立IDE，其他初创AI编码插件也不再支持IDEA。据开源社区反馈与自身实际使用体验，Cursor其效果大大优于Copilot。讯飞AI工程院与教育BG也对其青睐有加。
+时下最火的Cursor、国内字节跳动的Trae均为基于VSCode的独立IDE，其他初创AI编码插件也不再支持IDEA。据开源社区反馈与自身实际使用体验，Cursor其效果大大优于Copilot。
 
 image::doc/CursorArchdiag.PNG[Cursor架构图]
 
