@@ -58,8 +58,8 @@ CMD+I 创建springboot配置文件
 
     结论：VSCode具备替代IDEA intelliJ Community能力，没有明显硬伤。主力开发工具可以使用Cursor，在必要时使用IDEA打开同项目同时使用
 
-## Cursor配置Proxy后REST Client插件不兼容
-Windows下无问题，我本机MacOS有问题（待查个体问题还是MacOS系统问题），集团解决中，开另一个VSCode使用该插件
+## Cursor配置Proxy后Httpyac插件不兼容
+排除所有URL代理，配置 Httpyac: Proxy Exclude List *
 
 ## Cursor使用技巧
 * 通读 https://cursor101.com/zh 2H
